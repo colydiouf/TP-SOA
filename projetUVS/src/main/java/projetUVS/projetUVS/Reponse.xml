@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<getCourseDetailsResponse xmlns="http://www.example.org/premiere" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance "
+xsi:schemaLocation="http://www.example.org/premiere premiere.xsd">
+<CourseDetails>
+		<id>123</id>
+		<name>Spring</name>
+		<description>You would learn the basics of Spring Framework</description>
+	</CourseDetails>
+</getCourseDetailsResponse>
