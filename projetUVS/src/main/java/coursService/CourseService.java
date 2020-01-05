@@ -10,7 +10,7 @@ import org.example.cours.CourseDetails;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Service
+@Component
 public class CourseService {
 
 	private static final Map<String, CourseDetails> coursDetails = new HashMap<>();
@@ -36,6 +36,12 @@ public class CourseService {
 	}
 	public CourseDetails findCourseDetails(BigInteger id) {
 	     return coursDetails.get(id);
+	}
+	public Map<String, CourseDetails> findCourseDetails() {
+	     return coursDetails;
+	}
+	public void deletById(BigInteger id) {
+			coursDetails.remove(id);
 	}
 	
 	
